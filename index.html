@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <style>
+      span{
+        color: rebeccapurple;
+      }
+    </style>
+    
+    <title>Map at a specified location</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />   
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body id="markers-on-the-map">
+    <h5>Your IP adress: <span id="ipadress"></span></h5>
+    <h5>Your City: <span id="city"></span></h5>
+    <h5>Your Region: <span id="region"></span></h5>
+    <h5>Your ISP: <span id="isp"></span></h5>
+    <h5>Your Postel Code: <span id="post"></span></h5>
+
+    <div style="width: 640px; height: 480px" id="mapContainer"></div>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
