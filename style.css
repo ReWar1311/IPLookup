@@ -1,0 +1,9 @@
+.H_logo{
+    display: none !important;
+}
+.H_copyright{
+    display: none !important;
+}
+#mapContainer{
+    min-width: auto;
+}

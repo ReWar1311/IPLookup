@@ -66,7 +66,13 @@
                     zoom: 12,
                     center: { lat: latitude, lng: longitude }
                   });
-        
+              // The behavior variable implements default interactions for pan/zoom (also on mobile touch environments).
+                const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+                // Enable dynamic resizing of the map, based on the current size of the enclosing cntainer
+                window.addEventListener('resize', () => map.getViewPort().resize());
+                const ui = H.ui.UI.createDefault(map, defaultLayers);
+                        
         
         })
         );
