@@ -4,9 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <style>
-      span{
-        color: rebeccapurple;
-      }
     </style>
     
     <title>Your IP details</title>
@@ -19,13 +16,35 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body id="markers-on-the-map">
-    <h5>Your IP adress: <span id="ipadress"></span></h5>
-    <h5>Your City: <span id="city"></span></h5>
-    <h5>Your Region: <span id="region"></span></h5>
-    <h5>Your ISP: <span id="isp"></span></h5>
-    <h5>Your Postel Code: <span id="post"></span></h5>
+    <table class="container">
+      <tbody>
+        <tr>
+          <td>Your IP adress:</td>
+          <td><span id="ipadress"></span></td>
+        </tr>
+        <tr>
+          <td>Your City:</td>
+          <td><span id="city"></span></td>
+        </tr>
+        <tr>
+          <td>Your Region:</td>
+          <td><span id="region"></span></td>
+        </tr>
+        <tr>
+          <td>Your ISP: </td>
+          <td><span id="isp"></span></td>
+        </tr>
+        <tr>
+          <td>Your Postel Code:</td>
+          <td><span id="post"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    <h6>*Map location and postal code might be inaccurate</h6>
 
-    <div style="width: 640px; height: 480px" id="mapContainer"></div>
+
+
+    <div class="container" id="map"><div style="width: 640px; height: 480px" id="mapContainer"></div></div>
     <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
